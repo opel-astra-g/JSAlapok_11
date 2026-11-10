@@ -23,5 +23,7 @@ let eredmenyDiv = document.getElementById("eredmeny")
 
 inditoGomb.addEventListener("click", function(){
     let gombSzovege = inditoGomb.textContent
-    let jatekosNev = nevInput.textContent
+    let jatekosNev = nevInput.value
+
+    eredmenyDiv.textContent = `Üdvözlünk ${jatekosNev}! Végrehajtott akció: ${gombSzovege}`
 })
